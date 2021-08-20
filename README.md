@@ -1,2 +1,2 @@
 # arduino-serial-watch-table
-a library to monitor and modify arduino variables via usb serial, in real time, through a graphic user interface software
+a real time library to monitor and modify arduino variables via serial usb through a graphic user interface tool
