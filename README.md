@@ -11,7 +11,10 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
   2. create a global SerialWatch instance  
       `cSerialWatcher SerialWatcher;`
 
-  3. map the variables inside the main loop():
+  3. Setup Serial communication inside the setup() routine  
+     `Serial.begin(115200);`
+     
+  4. map the variables inside the main loop():
      * each variable to monitor and edit can be mapped to the GUI through the following instruction,  
        readonly is optional and set to false by default  
        `SerialWatcher.Map(F("Name_That_I_Like"), GlobalVariableName(any), Readonly(bool));`
@@ -25,7 +28,7 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
       * after the variables mapping, is necessary to call this instruction to update all the mapped variables data  
         `SerialWatcher.Update();`
 
-   4. upload the software to the shield and then run SerialWatcherApp on a laptop to monitor and edit the mapped global variables
+   5. upload the software to the shield and then run SerialWatcherApp on a laptop to monitor and edit the mapped global variables
    
 
 * Supported Data-Types:
