@@ -5,7 +5,7 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
 
 * How to use it:
 
-  1. include SerialWatcher library inside your project  
+  1. copy SerialWatcher library cSerialWatch.h inside your project folder and include it in the project 
       `#include "cSerialWatch.h"`
 
   2. create a global SerialWatch instance  
