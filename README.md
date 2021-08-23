@@ -45,7 +45,7 @@ Unsigned Long | 32 bit (4 bytes) unsigned number, from 0 to 4,294,967,295
 Float | 32 bits (4 bytes) floating-point numbers, from -3.4028235E+38 to 3.4028235E+38
 Array of Chars | 8 bits (1 byte) each slot
 Flashstrings | 8 bit (1 byte) is a pointer of a string stored in flash (program) memory instead of SRAM
-Text/Empty Space | 8 bit (1 byte) stored in a pointer of a string stored in flash (program) memory instead of SRAM
+Text/Empty Space | 8 bit (1 byte) stored in a pointer of a string stored in flash (program) memory instead of SRAM  
 
 * Additional info:  
 SerialWatcher class memory occupation can be reduced/exdended based on your needs!
