@@ -49,6 +49,7 @@ Flashstrings | 8 bit (1 byte) is a pointer of a string stored in flash (program)
 Text/Empty Space | 8 bit (1 byte) stored in a pointer of a string stored in flash (program) memory instead of SRAM  
   
 
+  
 * Additional info:  
 SerialWatcher class memory occupation can be reduced/exdended based on your needs!
 Just increase/decrease the number of monitorning slots based on how much and which data-type the variables to be monitored are  
