@@ -22,7 +22,7 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
       * is possible to add empty spaces between lines through the following instruction  
         `SerialWatcher.EmptySpace();`
 
-      * is possible to add custom texts through the following instruction  
+      * is possible to add custom fixed texts through the following instruction  
         `SerialWatcher.Text(F("My custom text"));`
 
       * after the variables mapping, is necessary to call the update instruction to refresh them all at each loop scan  
