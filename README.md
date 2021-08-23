@@ -25,7 +25,7 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
       * is possible to add custom texts through the following instruction  
         `SerialWatcher.Text(F("My custom text"));`
 
-      * after the variables mapping, is necessary to call this instruction to update them all at each loop scan
+      * after the variables mapping, is necessary to call the update instruction to refresh them all at each loop scan  
         `SerialWatcher.Update();`
 
    5. upload the software to the shield and then run SerialWatcherApp on a laptop to monitor/edit the mapped global variables  
