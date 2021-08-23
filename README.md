@@ -28,9 +28,9 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
       * after the variables mapping, is necessary to call this instruction to update them all at each loop scan
         `SerialWatcher.Update();`
 
-   5. upload the software to the shield and then run SerialWatcherApp on a laptop to monitor/edit the mapped global variables
+   5. upload the software to the shield and then run SerialWatcherApp on a laptop to monitor/edit the mapped global variables  
 
-![Example](https://github.com/lozziboy/arduino-serial-watch-table/blob/main/example2.PNG)
+![Example](https://github.com/lozziboy/arduino-serial-watch-table/blob/main/example.PNG)  
 
 * Supported Data-Types:
 
