@@ -5,7 +5,7 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
 
 * How to use it:
 
-  1. copy SerialWatcher library cSerialWatch.h inside your project folder and include it in the project 
+  1. copy SerialWatcher library cSerialWatch.h inside your project folder and include it on top of the main.ino
       `#include "cSerialWatch.h"`
 
   2. create a global SerialWatch instance  
@@ -19,16 +19,16 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
        readonly is optional and set to false by default  
        `SerialWatcher.Map(F("Name_That_I_Like"), GlobalVariableName(any), Readonly(bool));`
        
-      * is possible to add empty spaces between the monitored variables through the following instruction  
+      * is possible to add empty spaces between lines through the following instruction  
         `SerialWatcher.EmptySpace();`
 
       * is possible to add custom texts through the following instruction  
         `SerialWatcher.Text(F("My custom text"));`
 
-      * after the variables mapping, is necessary to call this instruction to update all the mapped variables data  
+      * after the variables mapping, is necessary to call this instruction to update them all at each loop scan
         `SerialWatcher.Update();`
 
-   5. upload the software to the shield and then run SerialWatcherApp on a laptop to monitor and edit the mapped global variables
+   5. upload the software to the shield and then run SerialWatcherApp on a laptop to monitor/edit the mapped global variables
    
 
 * Supported Data-Types:
