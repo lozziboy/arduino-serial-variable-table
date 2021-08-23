@@ -15,7 +15,7 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
      `Serial.begin(115200);`
      
   4. map the variables inside the main loop():
-     * each variable to monitor and edit can be mapped to the GUI through the following instruction,  
+     * each variable to monitor/edit can be mapped to the GUI through the following instruction,  
        readonly is optional and set to false by default  
        `SerialWatcher.Map(F("Name_That_I_Like"), GlobalVariableName(any), Readonly(bool));`
        
