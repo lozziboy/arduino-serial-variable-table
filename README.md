@@ -11,7 +11,7 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
   2. create a global SerialWatch instance  
       `cSerialWatcher SerialWatcher;`
 
-  3. Setup Serial communication inside the setup() routine  
+  3. init Serial communication inside the setup() routine  
      `Serial.begin(115200);`
      
   4. map the variables inside the main loop():
