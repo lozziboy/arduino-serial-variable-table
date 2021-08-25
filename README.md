@@ -31,10 +31,7 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
    5. upload the software to the shield  
    
    6. run SerialWatcherApp on your computer to monitor/edit the mapped global variables  
-        https://github.com/lozziboy/arduino-serial-watcher-app
-
-![Example](https://github.com/lozziboy/arduino-serial-variable-table/blob/main/docs/example.PNG)  
-
+        https://github.com/lozziboy/arduino-serial-watcher-app  
 
 * Supported Data-Types:
 
@@ -52,6 +49,10 @@ Flashstrings | 8 bit (1 byte) is a pointer of a string stored in flash (program)
 Text/Empty Space | 8 bit (1 byte) stored in a pointer of a string stored in flash (program) memory instead of SRAM  
   
 <br/>
+
+* Preview:  
+
+![Example](https://github.com/lozziboy/arduino-serial-variable-table/blob/main/docs/example.PNG)  
 
 * Additional info:  
 SerialWatcher class memory occupation can be reduced/exdended based on your needs!
