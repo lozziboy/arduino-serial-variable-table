@@ -5,8 +5,8 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
 
 * How to use it:
 
-  1. copy SerialWatcher library cSerialWatch.h inside your project folder and include it on top of the main.ino  
-      `#include "cSerialWatch.h"`
+  1. copy SerialWatcher source library inside your project folder and include it on top of the main.ino    
+      `#include "cSerialWatcher.cpp"`
 
   2. create a global SerialWatch instance  
       `cSerialWatcher SerialWatcher;`
@@ -52,7 +52,7 @@ Text/Empty Space | 8 bit (1 byte) stored in a pointer of a string stored in flas
 
 * Additional info:  
 SerialWatcher class memory occupation can be reduced/exdended based on your needs!
-Just increase/decrease the number of monitorning slots based on how much and which data-type the variables to be monitored are  
+Just increase/decrease the number of monitorning slots based on which data-type and how many variables to be monitored.   
 
 ![Customization](https://github.com/lozziboy/arduino-serial-watch-table/blob/main/customization.PNG)  
 
