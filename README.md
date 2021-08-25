@@ -30,7 +30,7 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
 
    5. upload the software to the shield and then run SerialWatcherApp on your computer to monitor/edit the mapped global variables  
 
-![Example](https://github.com/lozziboy/arduino-serial-variable-table/blob/main/src/example.PNG)  
+![Example](https://github.com/lozziboy/arduino-serial-variable-table/blob/main/docs/example.PNG)  
 
 
 * Supported Data-Types:
@@ -54,6 +54,6 @@ Text/Empty Space | 8 bit (1 byte) stored in a pointer of a string stored in flas
 SerialWatcher class memory occupation can be reduced/exdended based on your needs!
 Just increase/decrease the number of monitorning slots based on which data-type and how many variables to be monitored.   
 
-![Customization](https://github.com/lozziboy/arduino-serial-variable-table/blob/main/src/customization.PNG)  
+![Customization](https://github.com/lozziboy/arduino-serial-variable-table/blob/main/docs/customization.PNG)  
 
 
