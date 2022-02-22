@@ -7,7 +7,8 @@ ___
 
  1. copy SerialWatcher source library inside your project folder and include it on top of the main.ino and create a SerialWatcher global instance  
       `#include "cSerialWatcher.h"`
-	  `cSerialWatcher SerialWatcher;`
+      
+      `cSerialWatcher SerialWatcher;`
 
   2. init Serial communication inside the setup routine  
      `Serial.begin(115200);`
