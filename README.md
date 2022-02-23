@@ -15,7 +15,7 @@ ___
      `Serial.begin(115200);`
      
  4. each variable to monitor/edit can be mapped to the GUI through the following instruction, readonly is optional and set to false by default. do that in the main loop  
-	   `SerialWatcher.Map(F("Name_That_You_Prefer"), GlobalVariableName(Variable_Name), Readonly(bool));`
+	   `SerialWatcher.Map(F("Name_That_You_Prefer"), Global_Variable_Name);`
        
  5. call the update instruction to refresh them all at each loop scan (only once, in the main loop)  
 	   `SerialWatcher.Update();`
