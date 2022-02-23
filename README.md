@@ -5,21 +5,22 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
 ___
 * How to use it:
 
- 1. copy SerialWatcher source library inside your project folder and include it on top of the main.ino and create a SerialWatcher global instance  
-      `#include "cSerialWatcher.h"`
+ 1. include cSerialWatcher source library on top of the main.ino  
+     `#include "cSerialWatcher.h"`
       
-      `cSerialWatcher SerialWatcher;`
+ 2. create a SerialWatcher global instance  
+     `cSerialWatcher SerialWatcher;`
 
-  2. init Serial communication inside the setup routine  
+ 3. init Serial communication inside the setup routine  
      `Serial.begin(115200);`
      
-  3. each variable to monitor/edit can be mapped to the GUI through the following instruction, readonly is optional and set to false by default. do that in the main loop
+ 4. each variable to monitor/edit can be mapped to the GUI through the following instruction, readonly is optional and set to false by default. do that in the main loop  
 	   `SerialWatcher.Map(F("Name_That_You_Prefer"), GlobalVariableName(Variable_Name), Readonly(bool));`
        
-  4. call the update instruction to refresh them all at each loop scan (only once, in the main loop)
+ 5. call the update instruction to refresh them all at each loop scan (only once, in the main loop)  
 	   `SerialWatcher.Update();`
 
-  5. upload the software to the shield and then run SerialWatcherApp on your computer to monitor/edit the mapped global variables  
+ 6. upload the software to the shield and then run SerialWatcherApp on your computer to monitor/edit the mapped global variables  
         https://github.com/lozziboy/arduino-serial-watcher-app  
       
 ___
