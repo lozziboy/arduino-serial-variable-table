@@ -35,18 +35,18 @@ ___
         `SerialWatcher.Text(F("My custom text"));`
 
    * SerialWatcher class memory occupation can be exdended/reduced based on your needs!
-      Just increase/decrease the number of monitorning slots based on which data-type and how many variables needs to be monitored above the library include.
-      `#define SERIALWATCHER_TX_MAX_BOOL 5`
-      `#define SERIALWATCHER_TX_MAX_BYTE 5`
-      `#define SERIALWATCHER_TX_MAX_INT 5`
-      `#define SERIALWATCHER_TX_MAX_UINT 2`
-      `#define SERIALWATCHER_TX_MAX_LONG 5`
-      `#define SERIALWATCHER_TX_MAX_ULONG 0`
-	    `#define SERIALWATCHER_TX_MAX_FLOAT 5`
-      `#define SERIALWATCHER_TX_MAX_CHAR 0`
-      `#define SERIALWATCHER_TX_MAX_ACHAR 0`
-      `#define SERIALWATCHER_TX_MAX_FLASHSTRING 5`
-      `#define SERIALWATCHER_TX_MAX_TEXT 5`
+      Just increase/decrease the number of monitorning slots based on which data-type and how many variables needs to be monitored above the library include.  
+      `#define SERIALWATCHER_TX_MAX_BOOL 5`  
+      `#define SERIALWATCHER_TX_MAX_BYTE 5`  
+      `#define SERIALWATCHER_TX_MAX_INT 5`  
+      `#define SERIALWATCHER_TX_MAX_UINT 2`  
+      `#define SERIALWATCHER_TX_MAX_LONG 5`  
+      `#define SERIALWATCHER_TX_MAX_ULONG 0`  
+      `#define SERIALWATCHER_TX_MAX_FLOAT 5`  
+      `#define SERIALWATCHER_TX_MAX_CHAR 0`  
+      `#define SERIALWATCHER_TX_MAX_ACHAR 0`  
+      `#define SERIALWATCHER_TX_MAX_FLASHSTRING 5`  
+      `#define SERIALWATCHER_TX_MAX_TEXT 5`  
       
 ___
 * Supported Data-Types:
