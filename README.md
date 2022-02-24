@@ -21,7 +21,9 @@ ___
 	   `SerialWatcher.Update();`
 
  6. upload the software to the shield and then run SerialWatcherApp on your computer to monitor/edit the mapped global variables  
-        https://github.com/lozziboy/arduino-serial-watcher-app  
+    https://github.com/lozziboy/arduino-serial-watcher-app    
+    important note: to release the serial port pause the SerialWatcherApp using the "Pause button" every time that there is the needs to perform a new download to the board 
+        
       
 ___
 * Additional info
