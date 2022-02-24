@@ -37,7 +37,8 @@ ___
         `SerialWatcher.Text(F("My custom text"));`
 
    * SerialWatcher class memory occupation can be exdended/reduced based on your needs!
-      Just increase/decrease the number of monitorning slots based on which data-type and how many variables needs to be monitored above the library include.  
+      Just increase/decrease the number of monitorning slots based on which data-type and how many variables needs to be monitored.  
+      Do that above the library include instruction.  
       `#define SERIALWATCHER_TX_MAX_BOOL 5`  
       `#define SERIALWATCHER_TX_MAX_BYTE 5`  
       `#define SERIALWATCHER_TX_MAX_INT 5`  
