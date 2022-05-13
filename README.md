@@ -3,6 +3,11 @@
 this library is compatible with arduino unoR3 (atmega328p) and all the shields based on esp8266**
       
 ___
+* Preview:  
+
+![Example](https://github.com/lozziboy/arduino-serial-variable-table/blob/main/docs/Example1.PNG)  
+
+___
 * How to use it:
 
  1. include cSerialWatcher source library on top of the main.ino  
@@ -68,8 +73,4 @@ Array of Chars | 8 bits (1 byte) each slot
 Flashstrings | 8 bit (1 byte) is a pointer of a string stored in flash (program) memory instead of SRAM
 Text/Empty Space | 8 bit (1 byte) stored in a pointer of a string stored in flash (program) memory instead of SRAM  
       
-___
-* Preview:  
-
-![Example](https://github.com/lozziboy/arduino-serial-variable-table/blob/main/docs/Example1.PNG)  
 
