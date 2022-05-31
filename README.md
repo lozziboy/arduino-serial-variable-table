@@ -68,7 +68,7 @@ Unsigned Int | 16 bit (2 byte) unsigned number, from 0 to 65,535
 Long | 32 bit (4 bytes), from -2,147,483,648 to 2,147,483,647
 Unsigned Long | 32 bit (4 bytes) unsigned number, from 0 to 4,294,967,295
 Float | 32 bits (4 bytes) floating-point numbers, from -3.4028235E+38 to 3.4028235E+38
-Char  | 8 bit (1 byte)
+Char  | 8 bit (1 byte), , from -128 to 127
 Array of Chars | 8 bits (1 byte) each slot
 Flashstrings | 8 bit (1 byte) is a pointer of a string stored in flash (program) memory instead of SRAM
 Text/Empty Space | 8 bit (1 byte) stored in a pointer of a string stored in flash (program) memory instead of SRAM  
