@@ -27,8 +27,14 @@ ___
 
  6. upload the software to the shield and then run SerialWatcherApp on your computer to monitor/edit the mapped global variables  
     https://github.com/lozziboy/arduino-serial-watcher-app    
-    important note: to release the serial port pause the SerialWatcherApp using the "Pause button" every time that there is the needs to perform a new download to the board 
-        
+    important note: to release the serial port pause the SerialWatcherApp using the "Pause button" every time that there is the needs to perform a new download to the board
+    
+Variable table is constantly updated in little parts at each loop().
+Is strongly suggested to do not use blocking istructions in order to run the loop() as fast as possible.
+Some blocking istructions to be avoided in the main loop() are
+while() statemens that needs many time
+delay() statemens that freeze the program for many time
+For a good user experience the loop() time should be not higher then 50ms
       
 ___
 * Additional info
