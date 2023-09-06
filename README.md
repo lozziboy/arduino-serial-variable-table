@@ -5,7 +5,7 @@ this library is compatible with arduino unoR3 (atmega328p) and all the shields b
 ___
 * Preview:  
 
-![Example](https://github.com/lozziboy/arduino-serial-variable-table/blob/main/docs/Example1.PNG)  
+![Example](https://github.com/lozziboy/arduino-serial-variable-table/blob/main/docs/image.PNG)  
 
 ___
 * How to use it:
