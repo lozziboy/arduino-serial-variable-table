@@ -135,7 +135,7 @@ class cSerialWatcher {
   
   // public methods
   public:
-    cSerialWatcher(); //constructor
+    cSerialWatcher(Stream &serial); //constructor
     //& = pass by reference method, when call the function is not necessary to convert input to a pointer
     void Map(const __FlashStringHelper *Name, bool &Value, bool readonly = false); //bool
     void Map(const __FlashStringHelper *Name, byte &Value, bool readonly = false); //byte

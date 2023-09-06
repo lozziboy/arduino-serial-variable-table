@@ -67,8 +67,8 @@
 #include "Arduino.h"
 #include "cSerialWatcher.h"
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
-cSerialWatcher::cSerialWatcher() { //constructor
-    _serial = &serial;
+cSerialWatcher::cSerialWatcher(Stream &serial) { //constructor
+  _serial = &serial;
   indexglobal = 0;
   _mem = B00000000;
   TxIdx = 0;
