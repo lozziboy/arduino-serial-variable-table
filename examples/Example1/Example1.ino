@@ -9,7 +9,7 @@ https://github.com/lozziboy/arduino-serial-variable-table
 #include "cSerialWatcher.h"
 
 // create SerialWatcher instance
-cSerialWatcher SerialWatcher;
+cSerialWatcher SerialWatcher(Serial);
 
 // create global variables
 int u = 15;
