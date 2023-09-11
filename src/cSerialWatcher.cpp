@@ -49,7 +49,7 @@
 
 	Supported Data-Types 
 	> bool:             8 bit (1 byte) two possible values, true or false
-    > int8_t:           8 bit (1 byte) unsigned number, from -128 to 127
+    > int8_t:           8 bit (1 byte), from -128 to 127
     > uint8_t:          8 bit (1 byte) unsigned number, from 0 to 255
     > int16_t:          16 bit (2 byte), from -32'768 to 32'767
     > uint16_t:         16 bit (2 byte) unsigned number, from 0 to 65,535
