@@ -48,7 +48,7 @@ ___
    * SerialWatcher class memory occupation can be exdended/reduced based on your needs!
       Just edit the cSerialWatcher.h file to increase the number of monitorning slots based on how many variables monitor.  
       In Windows envirmonment the library position is C:\Users\(your_login_user)\Documents\Arduino\libraries\cSerialWatcher.  
-      `#define SERIALWATCHER_TX_MAX_VALUES 5`  
+      `#define SERIALWATCHER_TX_MAX_VALUES 40`  
       
 ___
 * Supported Data-Types:
