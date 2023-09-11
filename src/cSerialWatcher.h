@@ -2,7 +2,7 @@
 	cSerialWatcher.h
 
 	a fast lightweight real time library to monitor and modify arduino variables via serial usb
-	this library is compatible with arduino unoR3 (atmega328p) and all the shields based on esp8266
+	this library is compatible with arduino unoR3, unoR4, Mega, and shields based on esp8266, esp32
   
 
   Instructions
