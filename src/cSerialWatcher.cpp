@@ -38,7 +38,7 @@
 
   > SerialWatcher class memory occupation can be reduced/exdended based on your needs! 
 	  Just increase/decrease the number of monitorning slots based how many variables to be monitored
-      #define SERIALWATCHER_TX_MAX_VALUES 5
+      #define SERIALWATCHER_TX_MAX_VALUES 40
 
   Usage example
 
