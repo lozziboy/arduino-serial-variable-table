@@ -1,6 +1,6 @@
 # arduino-serial-variable-table
 **a fast lightweight real time library to monitor and modify arduino variables via serial usb  
-this library is compatible with arduino unoR3, Mega, unoR4 and shields based on esp32, esp8266**
+this library is compatible with arduino unoR3, unoR4, Mega, and shields based on esp32, esp8266**
       
 ___
 * Preview:  
