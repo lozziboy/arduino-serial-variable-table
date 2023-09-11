@@ -1,6 +1,6 @@
 # arduino-serial-variable-table
 **a fast lightweight real time library to monitor and modify arduino variables via serial usb  
-this library is compatible with arduino unoR3 (atmega328p) and all the shields based on esp8266**
+this library is compatible with arduino unoR3, Mega, unoR4 and shields based on esp32, esp8266**
       
 ___
 * Preview:  
@@ -14,7 +14,7 @@ ___
      `#include "cSerialWatcher.h"`
       
  2. create a SerialWatcher global instance  
-     `cSerialWatcher SerialWatcher;`
+     `cSerialWatcher SerialWatcher(Serial);`
 
  3. init Serial communication inside the setup routine  
      `Serial.begin(115200);`
@@ -22,7 +22,7 @@ ___
  4. each variable to monitor/edit can be mapped to the GUI through the following instruction, readonly is optional and set to false by default. do that in the main loop  
 	   `SerialWatcher.Map(F("Name_That_You_Prefer"), Global_Variable_Name);`
        
- 5. call the update instruction to refresh them all at each loop scan (only once, in the main loop)  
+ 5. call the update instruction to refresh them all at each loop scan (only once call in the main loop)  
 	   `SerialWatcher.Update();`
 
  6. upload the software to the shield and then run SerialWatcherApp on your computer to monitor/edit the mapped global variables  
@@ -48,31 +48,24 @@ ___
         `SerialWatcher.Text(F("My custom text"));`
 
    * SerialWatcher class memory occupation can be exdended/reduced based on your needs!
-      Just increase/decrease the number of monitorning slots based on which data-type and how many variables needs to be monitored.  
-      Do that above the library include instruction.  
-      `#define SERIALWATCHER_TX_MAX_BOOL 5`  
-      `#define SERIALWATCHER_TX_MAX_BYTE 5`  
-      `#define SERIALWATCHER_TX_MAX_INT 5`  
-      `#define SERIALWATCHER_TX_MAX_UINT 2`  
-      `#define SERIALWATCHER_TX_MAX_LONG 5`  
-      `#define SERIALWATCHER_TX_MAX_ULONG 0`  
-      `#define SERIALWATCHER_TX_MAX_FLOAT 5`  
-      `#define SERIALWATCHER_TX_MAX_CHAR 0`  
-      `#define SERIALWATCHER_TX_MAX_ACHAR 0`  
-      `#define SERIALWATCHER_TX_MAX_FLASHSTRING 5`  
-      `#define SERIALWATCHER_TX_MAX_TEXT 5`  
+      Just edit the cSerialWatcher.h file to increase the number of monitorning slots based on how many variables monitor.  
+      In Windows envirmonment the library position is C:\Users\(your_login_user)\Documents\Arduino\libraries\cSerialWatcher.  
+      `#define SERIALWATCHER_TX_MAX_VALUES 5`  
       
 ___
 * Supported Data-Types:
 
 Data-Type | Info
 ------------ | -------------
-Bool | 8 bit (1 byte) two possible values, true or false
-Byte | 8 bit (1 byte) unsigned number, from 0 to 255          
-Int | 16 bit (2 byte), from -32,768 to 32,767
-Unsigned Int | 16 bit (2 byte) unsigned number, from 0 to 65,535
-Long | 32 bit (4 bytes), from -2,147,483,648 to 2,147,483,647
-Unsigned Long | 32 bit (4 bytes) unsigned number, from 0 to 4,294,967,295
+bool | 8 bit (1 byte) two possible values, true or false
+int8_t | 8 bit (1 byte), from -128 to 127
+uint8_t | 8 bit (1 byte) unsigned number, from 0 to 255          
+int16_t | 16 bit (2 byte), from -32,768 to 32,767
+uint16_t | 16 bit (2 byte) unsigned number, from 0 to 65,535
+int32_t | 32 bit (4 bytes), from -2,147,483,648 to 2,147,483,647
+uint32_t | 32 bit (4 bytes) unsigned number, from 0 to 4,294,967,295
+int64_t | 32 bit (4 bytes), from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+uint64_t | 32 bit (4 bytes) unsigned number, from 0 to 18,446,744,073,709,551,615
 Float | 32 bits (4 bytes) floating-point numbers, from -3.4028235E+38 to 3.4028235E+38
 Char  | 8 bit (1 byte), , from -128 to 127
 Array of Chars | 8 bits (1 byte) each slot
